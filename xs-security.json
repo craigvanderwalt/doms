@@ -1,0 +1,22 @@
+{
+  "xsappname": "astron",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.authenticated-user",
+      "description": "authenticated-user"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "authenticated-user",
+      "description": "generated from cds",
+      "scope-references": [
+        "$XSAPPNAME.authenticated-user"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
